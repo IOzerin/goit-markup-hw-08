@@ -1,9 +1,14 @@
 .what-are-we-do-section {
+  display: none;
   padding-bottom: 96px;
 
   .container {
     text-align: center;
     padding-top: 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: block;
   }
 }
 
