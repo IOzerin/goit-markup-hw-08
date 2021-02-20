@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+        integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="./index.html" class="logo">
+                    <span class="accent">Web</span>Studio
+                </a>
+                <ul class="navigation-links-list">
+                    <li>
+                        <a href="./index.html" class="navigation-links">Студия</a>
+                    </li>
+                    <li>
+                        <a href="./portfolio.html" class="navigation-links selected">Портфолио</a>
+                    </li>
+                    <li>
+                        <a href="#" class="navigation-links">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="navigation-contacts-list">
+                <li>
+                    <a href="mailto:info@example.com" class="navigation-contacts">
+                        <svg width="16">
+                            <use href="./images/all-pages-icons.svg#email"></use>
+                        </svg>
+                        info@example.com
+                    </a>
+                </li>
+                <li>
+                    <a href="tel:+380961111111" class="navigation-contacts">
+                        <svg width="10">
+                            <use href="./images/all-pages-icons.svg#phonebook"></use>
+                        </svg>
+                        +38 096 111 11 11
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <!-- PORTFOLIO -->
+        <section class="portfolio-section">
+            <div class="container">
+                <ul class="portfolio-contentbuttons">
+                    <li><button type="button" class="portfolio-button">Все</button></li>
+                    <li><button type="button" class="portfolio-button">Веб-сайты</button></li>
+                    <li><button type="button" class="portfolio-button">Приложения</button></li>
+                    <li><button type="button" class="portfolio-button">Дизайн</button></li>
+                    <li><button type="button" class="portfolio-button">Маркетинг</button></li>
+                </ul>
+                <ul class="project-preview-container">
+                    <li class="project-preview">
+                        <a href="#" class="project-preview-links">
+                            <img src="./images/portfolio/technokryak.jpg" class="project-preview-picture" alt="Технокряк" width="370">
+                            <div class="hover-overlay">
+                                <p class="hover-overlay-description">
+                                    Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для
+                                    цифрового
+                                    шпионажа и атак на защищённые сервера конкурентов.
+                                </p>
+                            </div>
+                            <div class="about-project-preview">
+                                <h2>Технокряк</h2>
+                                <p>Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project-preview">
+                        <a href="#" class="project-preview-links">
+                            <img src="./images/portfolio/new-orlean-vs-golden-star.jpg" class="project-preview-picture" alt="Постер New Orlean vs Golden Star" width="370">
+                            <div class="hover-overlay">
+                                <p class="hover-overlay-description">
+                                    Текст про Постер New Orlean vs Golden Star
+                                </p>
+                            </div>
+                            <div class="about-project-preview">
+                                <h2>Постер New Orlean vs Golden Star</h2>
+                                <p>Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project-preview">
+                        <a href="#" class="project-preview-links">
+                            <img src="./images/portfolio/seafood-restaurant.jpg" class="project-preview-picture" alt="Ресторан Seafood" width="370">
+                            <div class="hover-overlay">
+                                <p class="hover-overlay-description">
+                                    Текст про Ресторан Seafood
+                                </p>
+                            </div>
+                            <div class="about-project-preview">
+                                <h2>Ресторан Seafood</h2>
+                                <p>Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project-preview">
+                        <a href="#" class="project-preview-links">
+                            <img src="./images/portfolio/prime-project.jpg" class="project-preview-picture" alt="Проект Prime" width="370">
+                            <div class="hover-overlay">
+                                <p class="hover-overlay-description">
+                                    Текст про Проект Prime
+                                </p>
+                            </div>
+                            <div class="about-project-preview">
+                                <h2>Проект Prime</h2>
+                                <p>Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project-preview">
+                        <a href="#" class="project-preview-links">
+                            <img src="./images/portfolio/boxes-project.jpg" class="project-preview-picture" alt="Проект Boxes" width="370">
+                            <div class="hover-overlay">
+                                <p class="hover-overlay-description">
+                                    Текст про Проект Boxes
+                                </p>
+                            </div>
+                            <div class="about-project-preview">
+                                <h2>Проект Boxes</h2>
+                                <p>Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project-preview">
+                        <a href="#" class="project-preview-links">
+                            <img src="./images/portfolio/inspiration-has-no-borders.jpg" class="project-preview-picture" alt="Inspiration has no Borders" width="370">
+                            <div class="hover-overlay">
+                                <p class="hover-overlay-description">
+                                    Текст про Inspiration has no Borders
+                                </p>
+                            </div>
+                            <div class="about-project-preview">
+                                <h2>Inspiration has no Borders</h2>
+                                <p>Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project-preview">
+                        <a href="#" class="project-preview-links">
+                            <img src="./images/portfolio/limited-edition.jpg" class="project-preview-picture" alt="Издание Limited Edition" width="370">
+                            <div class="hover-overlay">
+                                <p class="hover-overlay-description">
+                                    Текст про Издание Limited Edition
+                                </p>
+                            </div>
+                            <div class="about-project-preview">
+                                <h2>Издание Limited Edition</h2>
+                                <p>Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project-preview">
+                        <a href="#" class="project-preview-links">
+                            <img src="./images/portfolio/lab-project.jpg" class="project-preview-picture" alt="Проект LAB" width="370">
+                            <div class="hover-overlay">
+                                <p class="hover-overlay-description">
+                                    Текст про Проект LAB
+                                </p>
+                            </div>
+                            <div class="about-project-preview">
+                                <h2>Проект LAB</h2>
+                                <p>Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project-preview">
+                        <a href="#" class="project-preview-links">
+                            <img src="./images/portfolio/growing-business.jpg" class="project-preview-picture" alt="Growing Business" width="370">
+                            <div class="hover-overlay">
+                                <p class="hover-overlay-description">
+                                    Текст про Growing Business
+                                </p>
+                            </div>
+                            <div class="about-project-preview">
+                                <h2>Growing Business</h2>
+                                <p>Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- /PORTFOLIO -->
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-address-container">
+                <a href="./index.html" class="logo">
+                    <span class="accent">Web</span>Studio
+                </a>
+                <address>
+                    <a href="https://goo.gl/maps/zEhUCx4hJLJ11no69">г. Киев, пр-т Леси Украинки, 26</a>
+                </address>
+                <ul class="footer-contacts-list">
+                    <li>
+                        <a href="mailto:info@example.com" class="footer-contacts">info@example.com</a>
+                    </li>
+                    <li>
+                        <a href="tel:+380961111111" class="footer-contacts">+38 096 111 11 11</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-social-container">
+                <h3 class="h3-small">Присоединяйтесь</h3>
+                <ul class="footer-social">
+                    <li>
+                        <a href="https://www.instagram.com/" class="footer-social-link">
+                            <svg width="20">
+                                <use href="./images/all-pages-icons.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/" class="footer-social-link">
+                            <svg width="20">
+                                <use href="./images/all-pages-icons.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://facebook.com/" class="footer-social-link">
+                            <svg width="20">
+                                <use href="./images/all-pages-icons.svg#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://linkedin.com/" class="footer-social-link">
+                            <svg width="20">
+                                <use href="./images/all-pages-icons.svg#linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-subscribe-form">
+                <h3 class="h3-small">Подпишитесь на рассылку</h3>
+                <form class="subscribe-form">
+                    <input type="email" class="subscribe-form-input" name="footer-email" id="footer-email"
+                        placeholder="E-mail">
+                    <button type="submit" class="button subscribe-button">
+                        Подписаться
+                        <svg width="24" height="24">
+                            <use href="./images/all-pages-icons.svg#send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

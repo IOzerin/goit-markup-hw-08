@@ -1,0 +1,35 @@
+.our-features-section {
+  padding: 96px 0;
+}
+
+.our-features-list {
+  justify-content: space-between;
+  margin: 0;
+}
+
+.our-features {
+  width: 270px;
+
+  p {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $txt-c-grey;
+    margin: 10px 0 0 0;
+  }
+}
+
+.our-features-img-wrapper {
+  width: 270px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $c-grey;
+  border-radius: 4px;
+  margin-bottom: 30px;
+
+  svg {
+    height: 100px;
+  }
+}

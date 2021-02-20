@@ -1,0 +1,35 @@
+.banner-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $c-dark;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/banner-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: $c-light;
+
+  @media screen and (min-width: $mobile) {
+    width: 100%;
+  }
+
+  .container {
+    padding: 118px 15px;
+
+    @media screen and (min-width: $mobile) {
+    }
+
+    @media screen and (min-width: $desktop) {
+      padding: 200px 15px;
+    }
+  }
+}
+
+.banner-section-content {
+  width: 290px;
+  text-align: center;
+  text-transform: uppercase;
+}
