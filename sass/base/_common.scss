@@ -4,9 +4,21 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding: 0 15px;
   margin: 0 auto;
+
+  @media screen and (min-width: $mobile) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 1200px;
+  }
 }
 
 address {
@@ -19,15 +31,24 @@ address {
 
 ul {
   list-style: none;
-  display: flex;
   padding: 0;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 h1 {
   font-weight: 900;
-  font-size: 26px;
+  font-size: 20px;
   line-height: 1.62;
   margin: 0 0 30px 0;
+
+  @media screen and (min-width: $mobile) {
+    font-size: 26px;
+    line-height: 1.62;
+  }
 
   @media screen and (min-width: $desktop) {
     font-weight: 900;
@@ -59,6 +80,11 @@ h3 {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin: 0;
+  text-align: center;
+
+  @media screen and (min-width: $tablet) {
+    text-align: left;
+  }
 }
 
 .button {

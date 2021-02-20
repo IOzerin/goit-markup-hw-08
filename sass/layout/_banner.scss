@@ -32,4 +32,12 @@
   width: 290px;
   text-align: center;
   text-transform: uppercase;
+
+  @media screen and (min-width: $mobile) {
+    min-width: 390px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    min-width: 680px;
+  }
 }
