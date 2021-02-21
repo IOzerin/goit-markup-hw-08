@@ -15,14 +15,24 @@
 
 .modal {
   background: $c-light;
-  width: 528px;
+  width: 450px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   position: relative;
-  padding: 40px;
+  padding: 15px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 20px;
+
+  @media screen and (min-width: $mobile) {
+    margin: 0;
+    padding: 40px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 528px;
+  }
 }
 
 .modal-close-btn {

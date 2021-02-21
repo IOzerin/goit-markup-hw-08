@@ -942,13 +942,27 @@ footer address a {
 
 .modal {
   background: #ffffff;
-  width: 528px;
+  width: 450px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   position: relative;
-  padding: 40px;
+  padding: 15px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 20px;
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    margin: 0;
+    padding: 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 
 .modal-close-btn {
@@ -1009,18 +1023,41 @@ footer address a {
   display: flex;
   justify-content: center;
   align-items: center;
+  align-self: center;
   margin-bottom: 30px;
 }
 
 .accept-policy label {
-  font-size: 14px;
-  line-height: 1.71;
+  width: 175px;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   margin: 0 0 0 9px;
 }
 
 .accept-policy label a {
   color: #2196f3;
+}
+
+@media screen and (min-width: 480px) {
+  .accept-policy label {
+    width: 344px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .accept-policy label {
+    width: 401px;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .accept-policy {
+    width: 100%;
+  }
 }
 
 .accept-policy-label {
@@ -1034,11 +1071,25 @@ footer address a {
   height: 15px;
   display: block;
   left: -25px;
-  top: 4px;
+  top: 7px;
   background: white;
   background-image: url(../images/not-accepted.svg);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 480px) {
+  .accept-policy-label::before {
+    left: -25px;
+    top: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .accept-policy-label::before {
+    left: -25px;
+    top: 4px;
+  }
 }
 
 .accept-policy-checkbox:checked + .accept-policy-label::before {
@@ -1081,7 +1132,7 @@ footer address a {
 }
 
 .contact-form-textarea {
-  height: 120px;
+  height: 90px;
   resize: none;
   margin-bottom: 20px;
   padding: 12px 16px;
@@ -1099,8 +1150,15 @@ footer address a {
   color: #212121;
 }
 
+@media screen and (min-width: 480px) {
+  .contact-form-textarea {
+    height: 120px;
+  }
+}
+
 .contact-form-input,
 .contact-form-textarea {
+  width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   color: #212121;
