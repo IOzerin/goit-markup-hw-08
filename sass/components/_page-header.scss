@@ -3,12 +3,22 @@ header {
   display: flex;
   justify-content: center;
   box-sizing: border-box;
-  padding: 25px 0;
+  padding: 21px 0 20px 0;
 
   .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+
+    .logo {
+      text-decoration: none;
+      color: $txt-c-dark;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 24px 0 25px 0;
   }
 }
 
@@ -26,21 +36,49 @@ nav {
   font-family: $font-logo;
   font-size: 26px;
   line-height: 1.19;
-  margin: 0 93px 0 0;
+  margin: 0;
+
+  @media screen and (min-width: $tablet) {
+    margin: 0 88px 0 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin: 0 93px 0 0;
+  }
 }
 
 .navigation-links-list {
+  display: none;
   width: 295px;
   justify-content: space-between;
-  margin: 0;
+  margin: 0 84px 0 0;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin: 0 305px 0 0;
+  }
 }
 
 .navigation-contacts-list {
+  display: none;
   justify-content: space-between;
-  margin: 0;
+  margin: 0 0 0 -4px;
 
   li:last-child {
-    margin-left: 30px;
+    margin: 10px 0 0 -2px;
+
+    @media screen and (min-width: $desktop) {
+      &:last-child {
+        margin: 0 0 0 30px;
+      }
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
   }
 }
 
@@ -50,12 +88,17 @@ nav {
   text-decoration: none;
   color: $txt-c-dark;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   position: relative;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 .selected {
@@ -85,12 +128,18 @@ nav {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   svg {
-    width: 16px;
-    height: 16px;
+    width: 14px;
+    height: 14px;
     fill: $txt-c-grey;
-    margin-right: 10px;
+    margin-right: 8px;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: $desktop) {
+      width: 16px;
+      height: 16px;
+      margin-right: 10px;
+    }
   }
 
   &:hover,
@@ -105,4 +154,12 @@ nav {
 
 .accent {
   color: $txt-c-accent;
+}
+
+.mobile-menu-open-btn {
+  display: flex;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
 }
