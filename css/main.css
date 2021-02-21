@@ -608,7 +608,19 @@ nav a {
 
 .portfolio-section {
   background: #ffffff;
-  padding: 94px 0;
+  padding: 60px 0;
+}
+
+.portfolio-section .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-section {
+    padding: 94px 0;
+  }
 }
 
 .portfolio-button {
@@ -621,8 +633,7 @@ nav a {
   line-height: 1.62;
   letter-spacing: 0.03em;
   cursor: pointer;
-  margin-right: 8px;
-  padding: 6px 22px;
+  padding: 6px 6px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -633,9 +644,57 @@ nav a {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+@media screen and (min-width: 480px) {
+  .portfolio-button {
+    padding: 6px 22px;
+  }
+}
+
 .portfolio-contentbuttons {
+  width: 275px;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  margin: 0 0 50px 0;
+  margin: 0 0 40px 0;
+}
+
+.portfolio-contentbuttons li {
+  margin-right: 8px;
+}
+
+.portfolio-contentbuttons li:last-child {
+  margin-right: 0;
+}
+
+.portfolio-contentbuttons li:nth-child(-n + 3) {
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-contentbuttons li:nth-child(-n + 3):nth-child(-n + 3) {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .portfolio-contentbuttons {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-contentbuttons {
+    justify-content: center;
+    margin: 0 0 30px 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-contentbuttons {
+    justify-content: center;
+    margin: 0 0 50px 0;
+  }
 }
 
 .project-preview-container {
@@ -647,18 +706,36 @@ nav a {
 
 .hover-overlay {
   position: absolute;
-  width: 370px;
-  height: 294px;
-  padding: 63px 24px;
+  width: 100%;
+  height: 356px;
+  padding: 20px 24px;
   box-sizing: border-box;
   background: rgba(33, 150, 243, 0.9);
   color: #ffffff;
   font-size: 18px;
   line-height: 28px;
-  top: 300px;
+  top: 80%;
   z-index: 1;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 480px) {
+  .hover-overlay {
+    padding: 77px 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hover-overlay {
+    padding: 49px 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hover-overlay {
+    padding: 63px 24px;
+  }
 }
 
 .hover-overlay-description {
@@ -666,12 +743,14 @@ nav a {
 }
 
 .project-preview {
+  width: 100%;
   background: #ffffff;
   border: 1px solid #eeeeee;
+  margin-bottom: 30px;
 }
 
-.project-preview:not(:nth-last-child(-n + 3)) {
-  margin-bottom: 30px;
+.project-preview:last-child {
+  margin-bottom: 0;
 }
 
 .project-preview a {
@@ -692,6 +771,33 @@ nav a {
   top: 0;
 }
 
+@media screen and (min-width: 480px) {
+  .project-preview {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .project-preview {
+    width: 354px;
+  }
+  .project-preview:first-child .about-project-preview {
+    height: 145px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project-preview {
+    width: 370px;
+  }
+  .project-preview:first-child .about-project-preview {
+    height: unset;
+  }
+  .project-preview:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }
+}
+
 .about-project-preview {
   padding: 20px 24px;
   background: #ffffff;
@@ -704,6 +810,18 @@ nav a {
   letter-spacing: 0.03em;
   color: #757575;
   margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .about-project-preview:first-child {
+    height: 145px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-project-preview:first-child {
+    height: unset;
+  }
 }
 
 .project-preview-links h2 {
