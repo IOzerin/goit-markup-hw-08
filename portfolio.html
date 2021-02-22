@@ -21,49 +21,6 @@
             <nav>
                 <ul class="navigation-links-list">
                     <li>
-                        <a href="./index.html" class="navigation-links selected">Студия</a>
-                    </li>
-                    <li>
-                        <a href="./portfolio.html" class="navigation-links">Портфолио</a>
-                    </li>
-                    <li>
-                        <a href="#" class="navigation-links">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
-            <ul class="navigation-contacts-list">
-                <li>
-                    <a href="mailto:info@example.com" class="navigation-contacts">
-                        <svg width="16">
-                            <use href="./images/all-pages-icons.svg#email"></use>
-                        </svg>
-                        info@example.com
-                    </a>
-                </li>
-                <li>
-                    <a href="tel:+380961111111" class="navigation-contacts">
-                        <svg width="10">
-                            <use href="./images/all-pages-icons.svg#phonebook"></use>
-                        </svg>
-                        +38 096 111 11 11
-                    </a>
-                </li>
-            </ul>
-            <button type="button" class="mobile-menu-open-btn" mobile-menu-portfolio-open>
-                <svg width="24" height="16">
-                    <use href="./images/all-pages-icons.svg#mobile-menu"></use>
-                </svg>
-            </button>
-        </div>
-    </header>
-    <!-- <header>
-        <div class="container">
-            <a href="./index.html" class="logo">
-                <span class="accent">Web</span>Studio
-            </a>
-            <nav>
-                <ul class="navigation-links-list">
-                    <li>
                         <a href="./index.html" class="navigation-links">Студия</a>
                     </li>
                     <li>
@@ -92,11 +49,13 @@
                     </a>
                 </li>
             </ul>
-            <button type="button" class="mobile-menu-open-btn" mobile-menu-portfolio-open>
-                =
+            <button type="button" class="mobile-menu-open-btn">
+                <svg width="24" height="16">
+                    <use href="./images/all-pages-icons.svg#mobile-menu"></use>
+                </svg>
             </button>
         </div>
-    </header> -->
+    </header>
     <main>
         <!-- PORTFOLIO -->
         <section class="portfolio-section">
@@ -311,8 +270,8 @@
         </div>
     </footer>
 <!-- /MODALS -->
-    <div class="mobile-menu is-hidden" mobile-menu-portfolio-modal>
-        <button type="button" class="mobile-menu-close-btn" mobile-menu-portfolio-close>
+    <div class="mobile-menu is-hidden" id="mobile-menu-portfolio-modal">
+        <button type="button" class="mobile-menu-close-btn">
             <svg width="11" height="11">
                 <use href="./images/all-pages-icons.svg#close"></use>
             </svg>
