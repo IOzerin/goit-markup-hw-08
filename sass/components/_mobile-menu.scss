@@ -28,10 +28,10 @@
 }
 
 .mobile-menu-navigation-links-list {
+  height: 180px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 205px;
   margin: 0;
 
   li:not(:last-child) {
@@ -41,20 +41,28 @@
   .mobile-menu-navigation-links {
     font-style: normal;
     font-weight: 500;
-    font-size: 40px;
+    font-size: 32px;
     line-height: 1.18;
     letter-spacing: 0.02em;
     color: #212121;
+
+    @media screen and (min-width: $mobile) {
+      font-size: 40px;
+    }
   }
 
   .mobile-menu-selected {
     display: flex;
     color: $c-accent;
   }
+
+  @media screen and (min-width: $mobile) {
+    height: 205px;
+  }
 }
 
 .mobile-menu-contacts-and-social {
-  height: 184px;
+  height: 144px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -78,27 +86,43 @@
       }
     }
   }
+
+  @media screen and (min-width: $mobile) {
+    height: 184px;
+  }
 }
 
 .mobile-menu-contacts-list {
-  height: 100px;
+  height: 80px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin: 0;
 
   .mobile-menu-phone {
-    font-size: 34px;
+    font-size: 26px;
     line-height: 1.18;
     letter-spacing: 0.02em;
     color: $txt-c-accent;
+
+    @media screen and (min-width: $mobile) {
+      font-size: 34px;
+    }
   }
 
   .mobile-menu-email {
-    font-size: 24px;
+    font-size: 16px;
     line-height: 1.17;
     letter-spacing: 0.02em;
     color: $txt-c-grey;
+
+    @media screen and (min-width: $mobile) {
+      font-size: 24px;
+    }
+  }
+
+  @media screen and (min-width: $mobile) {
+    height: 100px;
   }
 }
 
