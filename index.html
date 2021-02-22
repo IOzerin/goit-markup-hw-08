@@ -122,7 +122,7 @@
                                 Десктопные приложения
                             </p>
                         </div>
-                        <img src="./images/img-1.jpg" alt="Кодинг" width="370">
+                        <img src="./images/img-1.jpg" srcset="./images/img-1@2x.jpg 2x" alt="Кодинг">
                     </li>
                     <li>
                         <div class="hover-images">
@@ -130,7 +130,7 @@
                                 Мобильные приложения
                             </p>
                         </div>
-                        <img src="./images/img-2.jpg" alt="Выбор оформления" width="370">
+                        <img src="./images/img-2.jpg" srcset="./images/img-2@2x.jpg 2x" alt="Выбор оформления">
                     </li>
                     <li>
                         <div class="hover-images">
@@ -138,7 +138,7 @@
                                 Дизайнерские решения
                             </p>
                         </div>
-                        <img src="./images/img-3.jpg" alt="Цветовое оформление" width="370">
+                        <img src="./images/img-3.jpg" srcset="./images/img-3@2x.jpg 2x" alt="Цветовое оформление">
                     </li>
                 </ul>
             </div>
@@ -151,7 +151,15 @@
                 <h2>Наша команда</h2>
                 <ul class="all-team-members">
                     <li class="team-member">
-                        <img src="./images/product-designer.jpg" class="team-member-photo" alt="Игорь Демьяненко">
+                        <picture>
+                            <source srcset="./images/our-team/product-designer-mobile.jpg 1x, ./images/our-team/product-designer-mobile@2x.jpg 2x"
+                                media="(min-width: 320px)" />
+                            <source srcset="./images/our-team/product-designer-tablet.jpg 1x, ./images/our-team/product-designer-tablet@2x.jpg 2x"
+                                media="(min-width: 768px)" />
+                            <source srcset="./images/our-team/product-designer-desktop.jpg 1x, ./images/our-team/product-designer-desktop@2x.jpg 2x"
+                                media="(min-width: 1200px)" />
+                            <img src="./images/our-team/product-designer-mobile.jpg" class="team-member-photo" alt="Игорь Демьяненко">
+                        </picture>
                         <div class="about-team-member">
                             <h3>Игорь Демьяненко</h3>
                             <p>Product Designer</p>

@@ -156,7 +156,7 @@ img {
   z-index: 3;
 }
 
-@media screen and (max-height: 320px) {
+@media screen and (max-height: 360px) {
   .mobile-menu {
     padding: 18px 0;
   }
@@ -475,7 +475,7 @@ nav a {
   justify-content: center;
   align-items: center;
   background: #2f303a;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/banner-bg.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/banner/mobile-banner-bg.jpg");
   background-size: cover;
   background-position: center;
   color: #ffffff;
@@ -493,6 +493,20 @@ nav a {
 
 @media screen and (min-width: 480px) {
   .banner-section {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .banner-section {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/banner/tablet-banner-bg.jpg");
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .banner-section {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/banner/desktop-banner-bg.jpg");
     width: 100%;
   }
 }
@@ -517,7 +531,19 @@ nav a {
 
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .banner-section {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/banner-bg@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/banner/mobile-banner-bg@2x.jpg");
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .banner-section {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/banner/tablet-banner-bg@2x.jpg");
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .banner-section {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/banner/desktop-banner-bg@2x.jpg");
   }
 }
 
@@ -631,6 +657,10 @@ nav a {
 
 .what-are-we-do-examples li {
   position: relative;
+}
+
+.what-are-we-do-examples li img {
+  width: 370px;
 }
 
 .hover-images {
