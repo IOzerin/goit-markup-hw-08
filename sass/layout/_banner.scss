@@ -12,10 +12,6 @@
   background-position: center;
   color: $c-light;
 
-  @media screen and (min-width: $mobile) {
-    width: 100%;
-  }
-
   .container {
     padding: 118px 15px;
 
@@ -25,6 +21,10 @@
     @media screen and (min-width: $desktop) {
       padding: 200px 15px;
     }
+  }
+
+  @media screen and (min-width: $mobile) {
+    width: 100%;
   }
 }
 
@@ -39,5 +39,17 @@
 
   @media screen and (min-width: $desktop) {
     min-width: 680px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .banner-section {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/banner-bg@2x.jpg");
   }
 }

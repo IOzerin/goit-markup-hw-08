@@ -214,6 +214,7 @@ img {
 
 .mobile-menu-contacts-and-social .mobile-menu-social li {
   display: flex;
+  align-items: center;
 }
 
 .mobile-menu-contacts-and-social .mobile-menu-social li:not(:last-child)::after {
@@ -480,12 +481,6 @@ nav a {
   color: #ffffff;
 }
 
-@media screen and (min-width: 480px) {
-  .banner-section {
-    width: 100%;
-  }
-}
-
 .banner-section .container {
   padding: 118px 15px;
 }
@@ -493,6 +488,12 @@ nav a {
 @media screen and (min-width: 1200px) {
   .banner-section .container {
     padding: 200px 15px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .banner-section {
+    width: 100%;
   }
 }
 
@@ -511,6 +512,12 @@ nav a {
 @media screen and (min-width: 1200px) {
   .banner-section-content {
     min-width: 680px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .banner-section {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/banner-bg@2x.jpg");
   }
 }
 
@@ -1294,6 +1301,7 @@ footer address a {
   opacity: 1;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: auto;
 }
 
 .modal {
